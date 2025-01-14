@@ -1,0 +1,97 @@
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+h2 {
+    text-align: center;
+    color: #2f6d31;
+}
+
+p {
+    text-align: center;
+    color: #2f6d31;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2f6d31;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #c3d1c5;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2f6d31;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #276528;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Thank-you message */
+.thank-you-message {
+    text-align: center;
+    color: #2f6d31;
+    font-size: 1.2rem;
+}
+
+/* Home link */
+.home-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #2f6d31;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    color: #276528;
+}

@@ -1,0 +1,220 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #388e3c;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-out;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Banner styling */
+.banner {
+  text-align: center;
+  padding: 5em 1em;
+  background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.banner button {
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Carousel styling */
+.recipes {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #fff;
+}
+
+.recipes h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #388e3c;
+}
+
+/* Add slide animation to carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 1em 0;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.carousel-item {
+  min-width: 300px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1em;
+  transition: transform 0.3s;
+  opacity: 0;
+  animation: fadeInUp 0.7s forwards;
+}
+
+.carousel-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.carousel-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.carousel-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-item h3 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: #4caf50;
+}
+
+/* Carousel buttons */
+#prev,
+#next {
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #388e3c;
+  transition: color 0.3s;
+}
+
+#prev:hover,
+#next:hover {
+  color: #ff5722;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #388e3c;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
