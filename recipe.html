@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/stylesheet4.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Delight - Recipes</title>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Cooking Delight</div>
+    <nav>
+      <ul>
+        <ul><a href="../html files/index.html" target="_blank">Home</a></li>
+          <li><a href="../html files/recipe.html" target="_blank">Recipes</a></li>
+          <li><a href="../html files/about.html" target="_blank">About Us</a></li>
+          <li><a href="../html files/contact.html" target="_blank">Contact</a></li>
+          <li><a href="../html files/signin.html" target="_blank">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search and Filter Section -->
+  <section class="filter-section">
+    <input type="text" id="searchBar" placeholder="Search for recipes..." onkeyup="filterRecipes()">
+    <select id="categoryFilter" onchange="filterRecipes()">
+      <option value="all">All Categories</option>
+      <option value="Italian">Italian</option>
+      <option value="Salad">Salad</option>
+      <option value="Dessert">Dessert</option>
+    </select>
+  </section>
+
+  <!-- Recipes Section -->
+  <section class="recipes-section" id="recipesContainer">
+    <!-- Recipe Card 1 -->
+    <div class="recipe-card" data-category="Italian">
+      <img src="../picture/Spaghetti Carbonara.jpg" alt="Spaghetti Carbonara">
+      <h3>Spaghetti Carbonara</h3>
+      <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+    </div>
+
+    <!-- Recipe Card 2 -->
+    <div class="recipe-card" data-category="Salad">
+      <img src="../picture/Caesar Salad.jfif" alt="Caesar Salad">
+      <h3>Caesar Salad</h3>
+      <p>A fresh salad with romaine lettuce, croutons, and Caesar dressing.</p>
+    </div>
+
+    <!-- Recipe Card 3 -->
+    <div class="recipe-card" data-category="Dessert">
+      <img src="../picture/choclate cake.jfif" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>A rich, moist chocolate cake perfect for dessert lovers.</p>
+    </div>
+
+    <!-- Recipe Card 4 -->
+    <div class="recipe-card" data-category="Italian">
+      <img src="../picture/Margherita Pizza.jfif" alt="Margherita Pizza">
+      <h3>Margherita Pizza</h3>
+      <p>A simple yet delicious pizza topped with tomatoes, mozzarella, and basil.</p>
+    </div>
+
+    <!-- Additional Recipe Cards -->
+    <div class="recipe-card" data-category="Italian">
+      <img src="../picture/korma.jfif" alt="Chicken Korma">
+      <h3>Chicken Korma</h3>
+      <p>A flavorful dish made with chicken, spices, and a creamy sauce.</p>
+    </div>
+    <div class="recipe-card" data-category="Italian">
+      <img src="../picture/macroni.jfif" alt="Tikka Macaroni">
+      <h3>Tikka Macaroni</h3>
+      <p>A spicy twist on classic macaroni with tikka flavors.</p>
+    </div>
+  </section>
+
+
+
+  <!-- JavaScript for Filter Functionality -->
+  <script src="../Javascript files/script4.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="../css/stylesheet2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Cooking Delight</title>
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo"><u>Cooking Delight</u></div>
+    <nav>
+      <ul><a href="../html files/recipe.html" target="_blank">Recipes</a></li>
+        <li><a href="../html files/about.html" target="_blank">About Us</a></li>
+        <li><a href="../html files/contact.html" target="_blank">Contact</a></li>
+        <li><a href="../html files/signin.html" target="_blank">Sign in</a></li>
+        <ul><a href="../html files/index.html" target="_blank">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+    <h2>Our Mission</h2>
+    <p>At Cooking Delight, our mission is to bring the joy of cooking to everyone. We believe in creating easy-to-follow
+      recipes that anyone can master. Whether you're a beginner or a pro in the kitchen, we have something for you!</p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <!-- Team Member 1 -->
+      <div class="team-member" onclick="showBio('member1')">
+        <img src="../picture/hadi.jfif" alt="">
+        <h3>Abdul Hadi Shaikh</h3>
+        <p>Head Chef</p>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="team-member" onclick="showBio('member2')">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Tom">
+        <h3>Fahad Khan</h3>
+        <p>Recipe Developer</p>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="team-member" onclick="showBio('member3')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6n62ySfmLQb3HUyU4VFO0jZylBgJTIDWsRg&s"
+          alt="Linda">
+        <h3>Mairaj Bizenjo</h3>
+        <p>Content Writer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">
+      <p>"Cooking Delight has completely changed my approach to cooking. The recipes are so easy to follow!"</p>
+      <h4>- Jamie L.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"I love trying out the new recipes every week. They always turn out delicious!"</p>
+      <h4>- Maria K.</h4>
+    </div>
+  </section>
+
+  <!-- Team Member Bio Modal -->
+  <div id="bioModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeBio()">&times;</span>
+      <h3 id="bioName"></h3>
+      <p id="bioDescription"></p>
+    </div>
+  </div>
+
+
+ <script src="../Javascript files/script2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/stylesheet5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Cooking Delight</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="signinForm" onsubmit="return validateForm()">
+            <h2>Welcome to Cooking Delight</h2>
+            <p>Sign in to enjoy our delicious recipes!</p>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign In</button>
+            <a href="index.html" class="home-link">Go to Home</a>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <script src="../Javascript files/script5.js">
+       
+    </script>
+</body>
+
+</html>
